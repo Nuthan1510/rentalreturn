@@ -1,0 +1,15 @@
+{
+  "name": "rentalreturn",
+  "private": true,
+  "version": "1.0.0",
+  "description": "RentalReturn - small equipment rental tracking (React + Node/Express + MongoDB)",
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n api,web -c yellow,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix client run build && npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
